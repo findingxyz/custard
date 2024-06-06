@@ -9,7 +9,7 @@ windowTemplate.innerHTML =
 `<div class="window" tabindex="0">
     <div class="content">
         <div class="stopwatch">
-            <h1 class="name">0</h1>
+            <h1 class="name" contenteditable="true">0</h1>
             <span class="time">00:00:00.00</span>
         </div>
     </div>
