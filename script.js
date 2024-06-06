@@ -39,7 +39,7 @@ for (let i = 0; i < windows.length; i++) {
 }
 
 document.addEventListener("keydown", (event) => {
-    if (selected) {
+    if (selected && !event.target.attributes.getNamedItem("contenteditable")) {
         const timer = timers.get(selected);
         switch (event.key) {
             case "ArrowUp":
